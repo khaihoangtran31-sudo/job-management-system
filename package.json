@@ -10,7 +10,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node server.js",
-    "vercel-build": "npm run build"
+    "vercel-build": "npm run build",
+    "dev": "concurrently \"npm run server\" \"npm start\"",
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "cors": "^2.8.5",
