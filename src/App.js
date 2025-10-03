@@ -44,43 +44,33 @@ const API_BASE = getApiBase();
 
 const apiClient = {
   async request(endpoint, options = {}) {
-    const urlsToTry = getApiUrls();
+    // Sử dụng API_BASE trực tiếp thay vì thử nhiều URL
+    const baseUrl = API_BASE;
+    const url = `${baseUrl}${endpoint}`;
     
-    for (const baseUrl of urlsToTry) {
-      try {
-        const url = `${baseUrl}${endpoint}`;
-        const config = {
-          headers: {
-            'Content-Type': 'application/json',
-            ...options.headers
-          },
-          ...options
-        };
+    try {
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+          ...options.headers
+        },
+        ...options
+      };
 
-        console.log(`🔍 Thử kết nối đến: ${url}`);
-        const response = await fetch(url, config);
-        const data = await response.json();
-
-        if (!response.ok) {
-          throw new Error(data.error || `HTTP ${response.status}`);
-        }
-
-        // Nếu thành công, cập nhật API_BASE cho các request tiếp theo
-        if (baseUrl !== API_BASE) {
-          window.API_BASE = baseUrl;
-          console.log(`✅ Đã cập nhật API_BASE thành: ${baseUrl}`);
-        }
-
-        return data;
-      } catch (error) {
-        console.log(`❌ Không thể kết nối đến ${baseUrl}:`, error.message);
-        // Tiếp tục thử URL tiếp theo
-        continue;
+      console.log(`🔍 Kết nối đến: ${url}`);
+      const response = await fetch(url, config);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
+      
+      const data = await response.json();
+      console.log(`✅ Kết nối thành công: ${url}`);
+      return data;
+    } catch (error) {
+      console.log(`❌ Không thể kết nối đến ${baseUrl}:`, error.message);
+      throw error;
     }
-    
-    // Nếu tất cả URL đều thất bại
-    throw new Error('Không thể kết nối đến server. Vui lòng kiểm tra kết nối mạng.');
   },
 
   async login(username, password) {
