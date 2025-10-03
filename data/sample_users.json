@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "admin123",
+    "fullName": "Quản trị viên",
+    "department": "Quản lý",
+    "role": "admin",
+    "position": "Quản lý"
+  },
+  {
+    "id": 2,
+    "username": "demo_user",
+    "password": "demo123",
+    "fullName": "Người dùng Demo",
+    "department": "Sản Xuất",
+    "role": "user",
+    "position": "Nhân viên"
+  }
+]

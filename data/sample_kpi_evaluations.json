@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "userId": 2,
+    "userName": "Người dùng Demo",
+    "department": "Sản Xuất",
+    "date": "2025-01-01",
+    "scores": {
+      "performance": 85,
+      "discipline": 90,
+      "attitude": 88
+    },
+    "totalScore": 88,
+    "level": "Tốt",
+    "evaluatedBy": "Quản trị viên",
+    "evaluatorRole": "Quản lý",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  }
+]

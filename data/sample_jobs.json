@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "title": "Công việc mẫu",
+    "description": "Mô tả công việc mẫu cho demo",
+    "department": "Sản Xuất",
+    "assignedTo": "Người dùng Demo",
+    "assignedBy": "Quản trị viên",
+    "status": "Đang thực hiện",
+    "priority": "Trung bình",
+    "dueDate": "2025-01-31",
+    "createdAt": "2025-01-01T00:00:00.000Z",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  }
+]

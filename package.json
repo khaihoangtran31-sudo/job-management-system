@@ -1,0 +1,36 @@
+{
+  "name": "job-management-system",
+  "version": "2.0.0",
+  "description": "Hệ thống quản lý công việc - Phiên bản mới",
+  "main": "server.js",
+  "homepage": "https://YOUR_USERNAME.github.io/job-management-system",
+  "scripts": {
+    "start": "set PORT=5000 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "node server.js",
+    "vercel-build": "npm run build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "lucide-react": "^0.263.1",
+    "node-fetch": "^3.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
