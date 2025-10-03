@@ -3,6 +3,10 @@ import './App.css';
 
 // API Client - Tự động detect IP máy chủ với fallback
 const getApiBase = () => {
+  // Nếu đang chạy trên Vercel, sử dụng Vercel API
+  if (window.location.hostname.includes('vercel.app')) {
+    return `https://${window.location.hostname}`;
+  }
   // Nếu đang chạy trên localhost, sử dụng localhost
   if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
     return 'http://localhost:5001';
@@ -18,8 +22,12 @@ const getApiUrls = () => {
   const hostname = window.location.hostname;
   const urls = [];
   
+  // Nếu đang trên Vercel, sử dụng Vercel API
+  if (hostname.includes('vercel.app')) {
+    urls.push(`https://${hostname}`);
+  }
   // Nếu đang trên localhost
-  if (hostname === 'localhost' || hostname === '127.0.0.1') {
+  else if (hostname === 'localhost' || hostname === '127.0.0.1') {
     urls.push('http://localhost:5001');
     urls.push('http://127.0.0.1:5001');
   } else {
