@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "admin123",
+    "fullName": "Quản trị viên",
+    "department": "Quản lý",
+    "role": "admin",
+    "position": "Quản lý"
+  },
+  {
+    "id": 1758966772989,
+    "username": "khophoi_rot",
+    "password": "kp123",
+    "fullName": "Võ Văn Rớt",
+    "department": "Kho Phôi",
+    "position": "Tổ trưởng",
+    "role": "user"
+  },
+  {
+    "id": 1758968400808,
+    "username": "khophoi_chi",
+    "password": "kp1234",
+    "fullName": "Nguyễn Thiện Chí",
+    "department": "Kho Phôi",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759132729234,
+    "username": "khophoi_an",
+    "password": "an123",
+    "fullName": "Phạm Tứ Ân",
+    "department": "Kho Phôi",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759133428599,
+    "username": "sanxuat_duy",
+    "password": "Duy123",
+    "fullName": "Nguyễn Vũ Duy",
+    "department": "Sản Xuất",
+    "position": "Tổ trưởng",
+    "role": "user"
+  },
+  {
+    "id": 1759133496017,
+    "username": "sanxuat_duy1",
+    "password": "nduy123",
+    "fullName": "Nguyễn Lê Trung Nhựt Duy",
+    "department": "Sản Xuất",
+    "position": "Tổ phó",
+    "role": "user"
+  },
+  {
+    "id": 1759133540623,
+    "username": "sanxuat_huy",
+    "password": "sx123456",
+    "fullName": "Nguyễn Quốc Huy",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759133652303,
+    "username": "sanxuat_nghia",
+    "password": "nghiax123",
+    "fullName": "Đặng Võ Thành Nghĩa",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759133717615,
+    "username": "sanxuat_tao",
+    "password": "tao123",
+    "fullName": "Lê Văn Tạo ",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759133746671,
+    "username": "sanxuat_phuc",
+    "password": "phuc123",
+    "fullName": "Nguyễn Trọng Phúc",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759133784982,
+    "username": "sanxuat_loi",
+    "password": "loi123",
+    "fullName": "Trần Hữu Lợi",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759133814286,
+    "username": "sanxuat_tien",
+    "password": "tien123",
+    "fullName": "Nguyễn Thị Cẩm Tiên",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759133838742,
+    "username": "sanxuat_hau",
+    "password": "hau123",
+    "fullName": "Trần Hoàng Hậu",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759133859622,
+    "username": "sanxuat_nguyen",
+    "password": "nguyen123",
+    "fullName": "Võ Hoàng Nguyên",
+    "department": "Sản Xuất",
+    "position": "Tổ phó",
+    "role": "user"
+  },
+  {
+    "id": 1759133914854,
+    "username": "donghang_bao",
+    "password": "bao123",
+    "fullName": "Ngô Gia Bảo",
+    "department": "Đóng gói",
+    "position": "Tổ trưởng",
+    "role": "user"
+  },
+  {
+    "id": 1759133939998,
+    "username": "donghang_phuong",
+    "password": "phuong123",
+    "fullName": "Huỳnh Thị Mai Phương",
+    "department": "Đóng gói",
+    "position": "Tổ phó",
+    "role": "user"
+  },
+  {
+    "id": 1759133959822,
+    "username": "donghang_ngan",
+    "password": "ngan123",
+    "fullName": "Cam Truyền Thu Ngân",
+    "department": "Đóng gói",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759134050045,
+    "username": "sanxuat_trang",
+    "password": "trang123",
+    "fullName": "Bùi Phương Trang ",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759134107029,
+    "username": "sanxuat_cham",
+    "password": "cham123",
+    "fullName": "Phạm Thị Châm",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759134127941,
+    "username": "sanxuat_thu",
+    "password": "thu123",
+    "fullName": "Nguyễn Minh Thư",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759134176989,
+    "username": "sanxuat_tien2",
+    "password": "tien123",
+    "fullName": "Dương Thủy Tiên",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759134195293,
+    "username": "donghang_kiet",
+    "password": "kiet",
+    "fullName": "Cao Tuấn Kiệt",
+    "department": "Đóng gói",
+    "position": "Tổ phó",
+    "role": "user"
+  },
+  {
+    "id": 1759134229869,
+    "username": "traicat_dat",
+    "password": "dat123",
+    "fullName": "Nguyễn Minh Đạt",
+    "department": "Kho & Trải Cắt",
+    "position": "Tổ phó",
+    "role": "user"
+  },
+  {
+    "id": 1759134253749,
+    "username": "traicat_loc",
+    "password": "loc123",
+    "fullName": "Dương Tấn Lộc",
+    "department": "Kho & Trải Cắt",
+    "position": "Tổ trưởng",
+    "role": "user"
+  },
+  {
+    "id": 1759134300884,
+    "username": "sanxuat_tuong",
+    "password": "tuong123",
+    "fullName": "Văn Cao Vi Tường",
+    "department": "Sản Xuất",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759134324028,
+    "username": "traicat_du",
+    "password": "du123",
+    "fullName": "Cao Tuấn Du",
+    "department": "Kho & Trải Cắt",
+    "position": "Tổ phó",
+    "role": "user"
+  },
+  {
+    "id": 1759134347772,
+    "username": "traicat_tin",
+    "password": "tin123",
+    "fullName": "Lâm Trung Tín",
+    "department": "Kho & Trải Cắt",
+    "position": "Nhân viên",
+    "role": "user"
+  },
+  {
+    "id": 1759134413844,
+    "username": "traicat_hoang",
+    "password": "hoang123",
+    "fullName": "Lý Huy Hoàng",
+    "department": "Kho & Trải Cắt",
+    "position": "Tổ phó",
+    "role": "user"
+  }
+]

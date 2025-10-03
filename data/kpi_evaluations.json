@@ -1,0 +1,308 @@
+[
+  {
+    "id": 1759461640812,
+    "userId": 1759133914854,
+    "userName": "Ngô Gia Bảo",
+    "department": "Đóng gói",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 100,
+      "discipline": 74,
+      "attitude": 75
+    },
+    "totalScore": 87,
+    "level": "Tốt",
+    "evaluatedBy": "Quản trị viên",
+    "evaluatorRole": "Quản lý",
+    "createdAt": "2025-10-03T03:20:40.812Z"
+  },
+  {
+    "id": 1759461627909,
+    "userId": 1758966772989,
+    "userName": "Võ Văn Rớt",
+    "department": "Kho Phôi",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 100,
+      "discipline": 75,
+      "attitude": 75
+    },
+    "totalScore": 88,
+    "level": "Tốt",
+    "evaluatedBy": "Quản trị viên",
+    "evaluatorRole": "Quản lý",
+    "createdAt": "2025-10-03T03:20:27.909Z"
+  },
+  {
+    "id": 1759401294631,
+    "userId": 1759134127941,
+    "userName": "Nguyễn Minh Thư",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 74,
+      "discipline": 74,
+      "attitude": 49
+    },
+    "totalScore": 69,
+    "level": "Trung bình",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:34:54.631Z"
+  },
+  {
+    "id": 1759401276767,
+    "userId": 1759133784982,
+    "userName": "Trần Hữu Lợi",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 80,
+      "discipline": 75,
+      "attitude": 75
+    },
+    "totalScore": 78,
+    "level": "Khá",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:34:36.767Z"
+  },
+  {
+    "id": 1759401247936,
+    "userId": 1759133652303,
+    "userName": "Đặng Võ Thành Nghĩa",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 74,
+      "discipline": 75,
+      "attitude": 50
+    },
+    "totalScore": 70,
+    "level": "Khá",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:34:07.936Z"
+  },
+  {
+    "id": 1759401230703,
+    "userId": 1759134300884,
+    "userName": "Văn Cao Vi Tường",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 75,
+      "discipline": 80,
+      "attitude": 75
+    },
+    "totalScore": 77,
+    "level": "Khá",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:33:50.703Z"
+  },
+  {
+    "id": 1759401214327,
+    "userId": 1759134107029,
+    "userName": "Phạm Thị Châm",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 100,
+      "discipline": 90,
+      "attitude": 75
+    },
+    "totalScore": 92,
+    "level": "Xuất sắc",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:33:34.327Z"
+  },
+  {
+    "id": 1759401155959,
+    "userId": 1759133838742,
+    "userName": "Trần Hoàng Hậu",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 100,
+      "discipline": 100,
+      "attitude": 100
+    },
+    "totalScore": 100,
+    "level": "Xuất sắc",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:32:35.959Z"
+  },
+  {
+    "id": 1759401134168,
+    "userId": 1759133838742,
+    "userName": "Trần Hoàng Hậu",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 80,
+      "discipline": 80,
+      "attitude": 50
+    },
+    "totalScore": 74,
+    "level": "Khá",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:32:14.168Z"
+  },
+  {
+    "id": 1759401106079,
+    "userId": 1759133746671,
+    "userName": "Nguyễn Trọng Phúc",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 80,
+      "discipline": 75,
+      "attitude": 0
+    },
+    "totalScore": 63,
+    "level": "Trung bình",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:31:46.079Z"
+  },
+  {
+    "id": 1759401042647,
+    "userId": 1759134176989,
+    "userName": "Dương Thủy Tiên",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 80,
+      "discipline": 90,
+      "attitude": 80
+    },
+    "totalScore": 83,
+    "level": "Tốt",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:30:42.647Z"
+  },
+  {
+    "id": 1759401021879,
+    "userId": 1759134050045,
+    "userName": "Bùi Phương Trang ",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 80,
+      "discipline": 75,
+      "attitude": 75
+    },
+    "totalScore": 78,
+    "level": "Khá",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:30:21.879Z"
+  },
+  {
+    "id": 1759401001575,
+    "userId": 1759133814286,
+    "userName": "Nguyễn Thị Cẩm Tiên",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 75,
+      "discipline": 75,
+      "attitude": 75
+    },
+    "totalScore": 75,
+    "level": "Khá",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:30:01.575Z"
+  },
+  {
+    "id": 1759400971207,
+    "userId": 1759133717615,
+    "userName": "Lê Văn Tạo ",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 75,
+      "discipline": 80,
+      "attitude": 75
+    },
+    "totalScore": 77,
+    "level": "Khá",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:29:31.207Z"
+  },
+  {
+    "id": 1759400950311,
+    "userId": 1759133496017,
+    "userName": "Nguyễn Lê Trung Nhựt Duy",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 80,
+      "discipline": 90,
+      "attitude": 75
+    },
+    "totalScore": 82,
+    "level": "Tốt",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:29:10.311Z"
+  },
+  {
+    "id": 1759400670431,
+    "userId": 1759133652303,
+    "userName": "Đặng Võ Thành Nghĩa",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 100,
+      "discipline": 100,
+      "attitude": 100
+    },
+    "totalScore": 100,
+    "level": "Xuất sắc",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:24:30.431Z"
+  },
+  {
+    "id": 1759400647671,
+    "userId": 1759133540623,
+    "userName": "Nguyễn Quốc Huy",
+    "department": "Sản Xuất",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 90,
+      "discipline": 50,
+      "attitude": 100
+    },
+    "totalScore": 80,
+    "level": "Tốt",
+    "evaluatedBy": "Nguyễn Vũ Duy",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:24:07.671Z"
+  },
+  {
+    "id": 1759400584745,
+    "userId": 1759133939998,
+    "userName": "Huỳnh Thị Mai Phương",
+    "department": "Đóng gói",
+    "date": "2025-10-02",
+    "scores": {
+      "performance": 100,
+      "discipline": 100,
+      "attitude": 100
+    },
+    "totalScore": 100,
+    "level": "Xuất sắc",
+    "evaluatedBy": "Ngô Gia Bảo",
+    "evaluatorRole": "Tổ trưởng",
+    "createdAt": "2025-10-02T10:23:04.745Z"
+  }
+]
