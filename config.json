@@ -1,0 +1,79 @@
+{
+  "deployment": {
+    "vercel": {
+      "version": 2,
+      "builds": [
+        {
+          "src": "api/*.js",
+          "use": "@vercel/node"
+        },
+        {
+          "src": "package.json",
+          "use": "@vercel/static-build",
+          "config": {
+            "distDir": "build"
+          }
+        }
+      ],
+      "routes": [
+        {
+          "src": "/api/(.*)",
+          "dest": "/api/$1"
+        },
+        {
+          "src": "/(.*)",
+          "dest": "/build/$1"
+        }
+      ],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "railway": {
+      "build": {
+        "builder": "NIXPACKS"
+      },
+      "deploy": {
+        "startCommand": "npm run start",
+        "healthcheckPath": "/",
+        "healthcheckTimeout": 100,
+        "restartPolicyType": "ON_FAILURE",
+        "restartPolicyMaxRetries": 10
+      }
+    },
+    "render": {
+      "type": "web",
+      "buildCommand": "npm install && npm run build",
+      "startCommand": "npm run start",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  },
+  "local": {
+    "frontend": {
+      "port": 5000,
+      "host": "localhost"
+    },
+    "backend": {
+      "port": 5001,
+      "host": "localhost"
+    }
+  },
+  "database": {
+    "type": "json",
+    "path": "data/",
+    "files": {
+      "users": "users.json",
+      "kpi_evaluations": "kpi_evaluations.json",
+      "jobs": "jobs.json"
+    }
+  },
+  "features": {
+    "authentication": true,
+    "kpi_evaluation": true,
+    "job_management": true,
+    "reporting": true,
+    "mobile_responsive": true
+  }
+}

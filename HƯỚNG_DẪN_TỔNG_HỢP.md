@@ -52,7 +52,7 @@ Qly_CV/
 ├── src/                        # Mã nguồn React
 ├── server.js                   # Backend Node.js
 ├── package.json               # Cấu hình Node.js
-└── HƯỚNG_DẪN_SỬ_DỤNG.md      # Hướng dẫn
+└── HƯỚNG_DẪN_TỔNG_HỢP.md      # Hướng dẫn
 ```
 
 ## ⚡ Hướng dẫn sử dụng
@@ -86,3 +86,62 @@ Qly_CV/
 - ✅ **Siêu gọn gàng**: Từ 17 files → 1 file chính
 - ✅ **Dễ sử dụng**: Chỉ cần double-click
 - ✅ **Tích hợp hoàn chỉnh**: Tất cả chức năng trong 1 file
+
+## 🌐 Truy cập từ xa
+
+### 🔧 Ngrok (Miễn phí)
+1. **Cài đặt Ngrok**: `winget install ngrok`
+2. **Chạy hệ thống**: `HỆ_THỐNG.bat`
+3. **Tạo tunnel**: `ngrok http 5000`
+4. **Lấy URL**: https://xxx.ngrok.io
+
+### ☁️ Cloud Deployment
+- **Vercel**: https://job-management-system.vercel.app
+- **Render**: Deploy từ GitHub
+- **Railway**: Full-stack hosting
+
+## 📱 Mobile Access
+- **Truy cập từ điện thoại**: Sử dụng URL Ngrok
+- **Responsive design**: Tự động adapt mobile
+- **Touch-friendly**: Giao diện thân thiện
+
+## 🔧 Troubleshooting
+
+### ❌ Lỗi thường gặp
+1. **Port 5000 đã được sử dụng**: Chọn port khác
+2. **Không thể kết nối**: Kiểm tra firewall
+3. **Dữ liệu bị mất**: Kiểm tra file `data/*.json`
+
+### ✅ Giải pháp
+1. **Restart hệ thống**: Chọn option 6
+2. **Kiểm tra trạng thái**: Chọn option 5
+3. **Khởi động lại**: Chọn option 1
+
+## 📞 Hỗ trợ
+- **GitHub**: https://github.com/khaihoangtran31-sudo/job-management-system
+- **Issues**: Tạo issue trên GitHub
+- **Documentation**: Xem file này
+
+## 🎯 Tính năng nâng cao
+
+### 🔐 Bảo mật
+- **Authentication**: Login/logout
+- **Session management**: Tự động timeout
+- **Data encryption**: Mã hóa dữ liệu
+
+### 📊 Báo cáo
+- **KPI Dashboard**: Thống kê đánh giá
+- **Export data**: Xuất Excel/PDF
+- **Charts**: Biểu đồ trực quan
+
+### 🔄 Tự động hóa
+- **Auto-backup**: Tự động backup dữ liệu
+- **Scheduled tasks**: Tác vụ theo lịch
+- **Notifications**: Thông báo email
+
+## 🚀 Roadmap
+- [ ] **Mobile App**: Ứng dụng di động
+- [ ] **API Integration**: Tích hợp API bên ngoài
+- [ ] **Advanced Analytics**: Phân tích nâng cao
+- [ ] **Multi-language**: Đa ngôn ngữ
+- [ ] **Cloud Sync**: Đồng bộ đám mây
