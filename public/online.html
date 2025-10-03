@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Online - Job Management 2.0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .online-container {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 800px;
+            width: 90%;
+        }
+        
+        .online-icon {
+            font-size: 4rem;
+            color: #28a745;
+            margin-bottom: 1rem;
+        }
+        
+        .online-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .online-description {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .access-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .access-card {
+            background: #f8f9ff;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid #e1e5f2;
+            transition: all 0.3s;
+        }
+        
+        .access-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+        
+        .access-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .access-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+        
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+        
+        .btn-info {
+            background: #17a2b8;
+            color: white;
+        }
+        
+        .btn-info:hover {
+            background: #138496;
+            transform: translateY(-2px);
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+        
+        .status-online {
+            background: #28a745;
+            animation: pulse 2s infinite;
+        }
+        
+        .status-offline {
+            background: #dc3545;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .info-box {
+            background: #e3f2fd;
+            border: 1px solid #bbdefb;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .info-box h4 {
+            color: #1976d2;
+            margin-bottom: 1rem;
+        }
+        
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .info-box li {
+            padding: 0.5rem 0;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .info-box li::before {
+            content: "ℹ️";
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="online-container">
+        <div class="online-icon">🌐</div>
+        <h1 class="online-title">Truy cập Online</h1>
+        <p class="online-description">
+            Hệ thống có thể truy cập từ xa thông qua nhiều phương thức khác nhau
+        </p>
+        
+        <div class="access-methods">
+            <div class="access-card">
+                <h3>🚀 Vercel (Khuyến nghị)</h3>
+                <p>Deploy tự động từ GitHub, 24/7 uptime, miễn phí</p>
+                <button class="btn btn-success" onclick="openVercel()">
+                    <span class="status-indicator status-online"></span>
+                    Truy cập Vercel
+                </button>
+            </div>
+            
+            <div class="access-card">
+                <h3>☁️ Render</h3>
+                <p>Full-stack hosting, PostgreSQL database, miễn phí</p>
+                <button class="btn btn-info" onclick="openRender()">
+                    <span class="status-indicator status-online"></span>
+                    Truy cập Render
+                </button>
+            </div>
+            
+            <div class="access-card">
+                <h3>🔧 Ngrok (Local)</h3>
+                <p>Tạo tunnel từ localhost ra internet, cần máy tính chạy</p>
+                <button class="btn btn-primary" onclick="openNgrok()">
+                    <span class="status-indicator status-offline"></span>
+                    Hướng dẫn Ngrok
+                </button>
+            </div>
+            
+            <div class="access-card">
+                <h3>🏠 Local System</h3>
+                <p>Chạy trên máy tính cá nhân, cần khởi động hệ thống</p>
+                <button class="btn btn-primary" onclick="openLocal()">
+                    <span class="status-indicator status-offline"></span>
+                    Truy cập Local
+                </button>
+            </div>
+        </div>
+        
+        <div class="info-box">
+            <h4>📋 Hướng dẫn truy cập:</h4>
+            <ul>
+                <li><strong>Vercel:</strong> https://job-management-system.vercel.app</li>
+                <li><strong>Render:</strong> Deploy từ GitHub repository</li>
+                <li><strong>Ngrok:</strong> Cần cài đặt và chạy lệnh <code>ngrok http 5000</code></li>
+                <li><strong>Local:</strong> Chạy <code>START.bat</code> rồi truy cập http://localhost:5000</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h4>🔐 Thông tin đăng nhập:</h4>
+            <ul>
+                <li><strong>Username:</strong> admin</li>
+                <li><strong>Password:</strong> admin123</li>
+                <li><strong>Quyền:</strong> Quản trị viên (toàn quyền)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function openVercel() {
+            window.open('https://job-management-system.vercel.app', '_blank');
+        }
+        
+        function openRender() {
+            alert('Render: Deploy từ GitHub repository\n1. Truy cập render.com\n2. Connect GitHub\n3. Deploy repository job-management-system');
+        }
+        
+        function openNgrok() {
+            alert('Ngrok: Tạo tunnel từ localhost\n1. Cài đặt: winget install ngrok\n2. Chạy hệ thống: START.bat\n3. Tạo tunnel: ngrok http 5000\n4. Sử dụng URL được tạo');
+        }
+        
+        function openLocal() {
+            // Check if local system is running
+            fetch('http://localhost:5000')
+                .then(response => {
+                    if (response.ok) {
+                        window.open('http://localhost:5000', '_blank');
+                    } else {
+                        throw new Error('System not running');
+                    }
+                })
+                .catch(error => {
+                    alert('Hệ thống chưa được khởi động!\nVui lòng chạy START.bat để khởi động hệ thống trước.');
+                });
+        }
+        
+        // Check system status on load
+        window.addEventListener('load', () => {
+            // Check Vercel status
+            fetch('https://job-management-system.vercel.app')
+                .then(response => {
+                    if (response.ok) {
+                        console.log('Vercel: Online');
+                    }
+                })
+                .catch(error => {
+                    console.log('Vercel: Offline');
+                });
+            
+            // Check local status
+            fetch('http://localhost:5000')
+                .then(response => {
+                    if (response.ok) {
+                        console.log('Local: Online');
+                        // Update local button status
+                        const localButton = document.querySelector('.access-card:nth-child(4) .status-indicator');
+                        localButton.className = 'status-indicator status-online';
+                    }
+                })
+                .catch(error => {
+                    console.log('Local: Offline');
+                });
+        });
+    </script>
+</body>
+</html>

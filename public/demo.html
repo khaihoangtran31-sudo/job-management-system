@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Hệ Thống Quản Lý Công Việc 2.0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .demo-container {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        .demo-icon {
+            font-size: 4rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .demo-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .demo-description {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .demo-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: #f8f9ff;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .status {
+            margin-top: 2rem;
+            padding: 1rem;
+            border-radius: 10px;
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+        }
+        
+        .status.success {
+            background: #d4edda;
+            border-left-color: #28a745;
+            color: #155724;
+        }
+        
+        .status.error {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+            color: #721c24;
+        }
+        
+        .features-list {
+            text-align: left;
+            margin: 2rem 0;
+        }
+        
+        .features-list h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .features-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features-list li {
+            padding: 0.5rem 0;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .features-list li::before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-icon">🚀</div>
+        <h1 class="demo-title">Demo Hệ Thống</h1>
+        <p class="demo-description">
+            Hệ thống quản lý công việc và đánh giá KPI hiện đại, dễ sử dụng với giao diện thân thiện
+        </p>
+        
+        <div class="features-list">
+            <h3>Tính năng chính:</h3>
+            <ul>
+                <li>Quản lý nhân viên (30+ nhân viên mẫu)</li>
+                <li>Đánh giá KPI (20+ đánh giá mẫu)</li>
+                <li>Quản lý công việc và tiến độ</li>
+                <li>Báo cáo thống kê chi tiết</li>
+                <li>Giao diện responsive</li>
+                <li>Hệ thống đăng nhập an toàn</li>
+            </ul>
+        </div>
+        
+        <div class="demo-buttons">
+            <button class="btn btn-primary" onclick="startSystem()">
+                <span id="btn-text">🚀 Khởi động hệ thống</span>
+            </button>
+            <a href="https://github.com/khaihoangtran31-sudo/job-management-system" class="btn btn-secondary" target="_blank">
+                📁 Xem Source Code
+            </a>
+        </div>
+        
+        <div id="status" class="status" style="display: none;">
+            <div id="status-text"></div>
+        </div>
+    </div>
+
+    <script>
+        function startSystem() {
+            const button = document.querySelector('.btn-primary');
+            const btnText = document.getElementById('btn-text');
+            const status = document.getElementById('status');
+            const statusText = document.getElementById('status-text');
+            
+            // Show loading
+            btnText.innerHTML = '<span class="loading"></span> Đang khởi động...';
+            button.disabled = true;
+            status.style.display = 'block';
+            status.className = 'status';
+            statusText.innerHTML = '🔄 Đang kiểm tra hệ thống...';
+            
+            // Simulate system check
+            setTimeout(() => {
+                statusText.innerHTML = '✅ Hệ thống đã sẵn sàng!';
+                status.className = 'status success';
+                
+                // Try to redirect to local system
+                setTimeout(() => {
+                    try {
+                        // Check if local system is running
+                        fetch('http://localhost:5000')
+                            .then(response => {
+                                if (response.ok) {
+                                    window.location.href = 'http://localhost:5000';
+                                } else {
+                                    throw new Error('System not running');
+                                }
+                            })
+                            .catch(error => {
+                                showError();
+                            });
+                    } catch (error) {
+                        showError();
+                    }
+                }, 1000);
+            }, 2000);
+        }
+        
+        function showError() {
+            const status = document.getElementById('status');
+            const statusText = document.getElementById('status-text');
+            const btnText = document.getElementById('btn-text');
+            const button = document.querySelector('.btn-primary');
+            
+            status.className = 'status error';
+            statusText.innerHTML = `
+                ❌ Hệ thống chưa được khởi động!<br>
+                <small>Vui lòng chạy <code>START.bat</code> để khởi động hệ thống trước</small>
+            `;
+            
+            btnText.innerHTML = '🔄 Thử lại';
+            button.disabled = false;
+            button.onclick = startSystem;
+        }
+        
+        // Check system status on load
+        window.addEventListener('load', () => {
+            const status = document.getElementById('status');
+            const statusText = document.getElementById('status-text');
+            
+            status.style.display = 'block';
+            statusText.innerHTML = '🔍 Đang kiểm tra trạng thái hệ thống...';
+            
+            // Check if system is running
+            fetch('http://localhost:5000')
+                .then(response => {
+                    if (response.ok) {
+                        status.className = 'status success';
+                        statusText.innerHTML = '✅ Hệ thống đang chạy! <a href="http://localhost:5000" style="color: #28a745;">Truy cập ngay</a>';
+                    } else {
+                        throw new Error('System not running');
+                    }
+                })
+                .catch(error => {
+                    status.className = 'status';
+                    statusText.innerHTML = 'ℹ️ Hệ thống chưa được khởi động. Click "Khởi động hệ thống" để bắt đầu.';
+                });
+        });
+    </script>
+</body>
+</html>

@@ -36,3 +36,4 @@ Qly_CV/
 - **Thông tin hệ thống**: `docs/SYSTEM_INFO.md`
 
 ## 🎉 Sẵn sàng sử dụng!
+

@@ -14,3 +14,4 @@ cd /d "%~dp0"
 call scripts\HỆ_THỐNG.bat
 
 pause
+
